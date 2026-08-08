@@ -1,0 +1,1 @@
+Learned text preprocessing, TF-IDF vectorization, train-test splitting, Logistic Regression and Passive Aggressive Classifier training, model evaluation using accuracy and confusion matrix, model comparison, saving ML models using Joblib, and making predictions on new news articles.

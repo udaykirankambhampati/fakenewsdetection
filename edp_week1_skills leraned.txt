@@ -1,0 +1,1 @@
+Python basics, Pandas basics, dataset loading using Pandas, dataset preprocessing, TF-IDF vectorization, train-test split, Logistic Regression model training, and model evaluation using confusion matrix and classification report. Currently learning the Passive Aggressive Classifier.

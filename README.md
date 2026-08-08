@@ -226,32 +226,3 @@ Confidence : XX.XX%
 **Result:** The system successfully classifies news articles as Fake or Real with **98.57% accuracy**.
 
 
-📁 Project Structure
-
-Fake_News_Detector/
-│
-├── dataset/
-│   ├── Fake.csv
-│   └── True.csv
-│
-├── model/
-│   ├── fake_news_model.pkl
-│   └── tfidf_vectorizer.pkl
-│
-├── notebooks/
-│
-├── screenshots/
-│
-├── static/
-│
-├── templates/
-│
-├── utils/
-│   └── preprocessing.py
-│
-├── app.py
-├── predict.py
-├── train_model.py
-├── requirements.txt
-├── README.md
-└── edp_week2_skills_learned.txt

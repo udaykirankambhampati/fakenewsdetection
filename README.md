@@ -60,7 +60,7 @@ During this week, the project progressed from raw news datasets to a trained and
                      │
                      ▼
               NEWS PREDICTION
-    ```
+```
 
 
 # Skills Learned

@@ -342,7 +342,7 @@ The application allows users to:
        
 ## 📁 Week 3 Project Structure
 
-```text
+text
 Fake_News_Detector/
 │
 ├── app.py

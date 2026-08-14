@@ -257,3 +257,86 @@ Fake_News_Detector/
 ├── README.md
 └── edp_week2_skills_learned.txt
 ```
+
+
+---
+
+# 📅 Week 3 — Flask Web Application
+
+## 🎯 Week 3 Objective
+
+The main objective of Week 3 was to integrate the trained Machine Learning model with a **Flask web application** and create an interactive interface for Fake News Detection.
+
+The Machine Learning model developed during Week 2 was connected to a web application so that users can enter news articles and receive a **FAKE NEWS / REAL NEWS** prediction with a confidence score.
+
+---
+
+## 🚀 What I Built This Week
+
+During Week 3, I developed a Flask-based Fake News Detection web application.
+
+The application allows users to:
+
+- Enter a news title
+- Enter news content
+- Submit the news for prediction
+- Receive a Fake/Real prediction
+- View the model confidence score
+- Clear the entered information
+
+---
+
+## 🔄 Week 3 Application Workflow
+
+```text
+              USER
+                │
+                ▼
+       ┌───────────────────┐
+       │   News Title      │
+       │   News Content    │
+       └─────────┬─────────┘
+                 │
+                 ▼
+       ┌───────────────────┐
+       │   Flask Web App   │
+       └─────────┬─────────┘
+                 │
+                 ▼
+       ┌───────────────────┐
+       │ Text Preprocessing│
+       └─────────┬─────────┘
+                 │
+                 ▼
+       ┌───────────────────┐
+       │  TF-IDF Vectorizer│
+       └─────────┬─────────┘
+                 │
+                 ▼
+       ┌───────────────────┐
+       │  ML Model         │
+       │  Passive          │
+       │  Aggressive       │
+       │  Classifier       │
+       └─────────┬─────────┘
+                 │
+                 ▼
+       ┌───────────────────┐
+       │    Prediction     │
+       └─────────┬─────────┘
+                 │
+          ┌──────┴──────┐
+          ▼             ▼
+     FAKE NEWS      REAL NEWS
+          │             │
+          └──────┬──────┘
+                 ▼
+       ┌───────────────────┐
+       │ Confidence Score  │
+       └─────────┬─────────┘
+                 │
+                 ▼
+       ┌───────────────────┐
+       │   Web Result      │
+       └───────────────────┘
+       ```

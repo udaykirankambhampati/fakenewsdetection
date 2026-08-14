@@ -339,4 +339,4 @@ The application allows users to:
        ┌───────────────────┐
        │   Web Result      │
        └───────────────────┘
-       ```
+       

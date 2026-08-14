@@ -340,3 +340,60 @@ The application allows users to:
        │   Web Result      │
        └───────────────────┘
        
+       ## 📁 Week 3 Project Structure
+
+```text
+Fake_News_Detector/
+│
+├── app.py
+├── train_model.py
+├── predict.py
+├── requirements.txt
+│
+├── model/
+│   ├── fake_news_model.pkl
+│   └── tfidf_vectorizer.pkl
+│
+├── dataset/
+│   ├── Fake.csv
+│   └── True.csv
+│
+├── templates/
+│   └── index.html
+│
+├── static/
+│   └── css/
+│       └── style.css
+│
+└── utils/
+    └── preprocessing.py
+
+🛠️ Technologies Used
+Python
+Flask
+HTML
+CSS
+Scikit-learn
+TF-IDF
+Passive Aggressive Classifier
+Joblib
+Pandas
+⚙️ How the Flask Application Works
+User enters news title and content.
+Flask receives the input using a POST request.
+Text is cleaned using the preprocessing function.
+TF-IDF converts the text into numerical features.
+The trained Machine Learning model analyzes the features.
+The application predicts FAKE NEWS or REAL NEWS.
+Model confidence is displayed on the web page.
+▶️ How to Run
+# Activate virtual environment
+venv\Scripts\activate
+
+
+# Run Flask application
+python app.py
+
+Open:
+
+http://127.0.0.1:5000

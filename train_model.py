@@ -147,7 +147,7 @@ else:
     print("\nBoth models performed equally well.")
 
 # ==========================================
-# SAVE BEST MODEL
+# SAVE MODELS
 # ==========================================
 
 if lr_accuracy >= pac_accuracy:
@@ -157,10 +157,13 @@ else:
     best_model = pac_model
     model_name = "Passive Aggressive Classifier"
 
-# Save model
+# Save the best performing model
 joblib.dump(best_model, "model/fake_news_model.pkl")
 
-# Save vectorizer
+# Save Logistic Regression separately
+joblib.dump(lr_model, "model/logistic_regression_model.pkl")
+
+# Save TF-IDF vectorizer
 joblib.dump(vectorizer, "model/tfidf_vectorizer.pkl")
 
 print("\n=========================================")
@@ -168,5 +171,6 @@ print("MODEL SAVED SUCCESSFULLY")
 print("=========================================")
 
 print(f"Best Model : {model_name}")
-print("Saved Model : model/fake_news_model.pkl")
+print("Saved Best Model : model/fake_news_model.pkl")
+print("Saved Logistic Regression : model/logistic_regression_model.pkl")
 print("Saved Vectorizer : model/tfidf_vectorizer.pkl")

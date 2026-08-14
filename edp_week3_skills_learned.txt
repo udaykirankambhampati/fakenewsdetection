@@ -1,0 +1,3 @@
+Week 3 Skills Learned:
+
+Flask basics, created Flask web application, Flask routes, GET and POST requests, HTML forms, Jinja2 templates, connected frontend with Flask backend, integrated Machine Learning model with Flask, loaded model using Joblib, used TF-IDF vectorizer, processed user input, generated Fake/Real predictions, displayed confidence score, designed prediction UI using HTML/CSS, input validation, debugging Flask errors, and tested the complete ML web application.

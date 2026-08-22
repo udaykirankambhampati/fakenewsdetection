@@ -407,7 +407,7 @@ The main objective of Week 4 was to evaluate the trained Machine Learning model 
 
 The model was evaluated using accuracy, confusion matrix, precision, recall and F1-score. The Flask application was also tested with different Fake News and Real News articles.
 
----
+
 
 ## 🚀 What I Built This Week
 
@@ -422,7 +422,7 @@ During Week 4, I:
 - Added Clear History functionality
 - Tested the complete Flask web application
 
----
+
 
 ## 📊 Week 4 Model Evaluation
 
@@ -432,6 +432,6 @@ During Week 4, I:
 
 ### Confusion Matrix
 
-``` text
+ text
 [[4685   25]
  [  18 4252]]

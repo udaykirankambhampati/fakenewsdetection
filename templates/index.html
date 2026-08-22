@@ -174,7 +174,9 @@
             color: #dc2626;
         }
 
-        /* CONFIDENCE BAR */
+        /* ==============================
+           CONFIDENCE BAR
+           ============================== */
 
         .confidence-bar {
             width: 100%;
@@ -198,12 +200,82 @@
             background: #ef4444;
         }
 
+        /* ==============================
+           PREDICTION HISTORY
+           ============================== */
+
+        .history {
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 18px;
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+        }
+
+        .history-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 18px;
+        }
+
+        .history-header h2 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .history-clear {
+            text-decoration: none;
+            color: #dc2626;
+            font-weight: bold;
+        }
+
+        .history-clear:hover {
+            text-decoration: underline;
+        }
+
+        .history-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 15px;
+            margin-top: 10px;
+            background: white;
+            border-radius: 10px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .history-item strong {
+            color: #2563eb;
+        }
+
+        .history-item p {
+            margin: 6px 0 0;
+            color: #64748b;
+            word-break: break-word;
+        }
+
+        .history-item span {
+            font-weight: bold;
+            color: #17233c;
+            white-space: nowrap;
+        }
+
+        /* ==============================
+           FOOTER
+           ============================== */
+
         .footer {
             text-align: center;
             margin-top: 28px;
             color: #64748b;
             font-size: 15px;
         }
+
+        /* ==============================
+           MOBILE
+           ============================== */
 
         @media (max-width: 650px) {
 
@@ -226,6 +298,17 @@
 
             .result .prediction {
                 font-size: 28px;
+            }
+
+            .history-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+
+            .history-item {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
     </style>
@@ -383,6 +466,59 @@
                     </div>
 
                 {% endif %}
+
+            {% endif %}
+
+
+            <!-- ==============================
+                 PREDICTION HISTORY
+                 ============================== -->
+
+            {% if history %}
+
+                <div class="history">
+
+                    <div class="history-header">
+
+                        <h2>
+                            Prediction History
+                        </h2>
+
+                        <a
+                            href="/clear-history"
+                            class="history-clear"
+                        >
+                            Clear History
+                        </a>
+
+                    </div>
+
+
+                    {% for item in history %}
+
+                        <div class="history-item">
+
+                            <div>
+
+                                <strong>
+                                    {{ item.prediction }}
+                                </strong>
+
+                                <p>
+                                    {{ item.title }}
+                                </p>
+
+                            </div>
+
+                            <span>
+                                {{ item.confidence }}%
+                            </span>
+
+                        </div>
+
+                    {% endfor %}
+
+                </div>
 
             {% endif %}
 

@@ -1,0 +1,11 @@
+EDP PROJECT – WEEK 4 SKILLS LEARNED
+
+• Learned Machine Learning model evaluation.
+• Used accuracy, precision, recall and F1-score.
+• Generated and analyzed a confusion matrix.
+• Evaluated the trained Passive Aggressive Classifier.
+• Integrated the evaluated model with Flask.
+• Tested Fake News and Real News predictions.
+• Implemented prediction history in the web application.
+• Displayed model confidence scores.
+• Improved understanding of end-to-end ML deployment and testing.

@@ -400,17 +400,12 @@ http://127.0.0.1:5000
 
 
 # 📊 Week 4 — Model Evaluation & Testing
-
 ## 🎯 Week 4 Objective
 
 The main objective of Week 4 was to evaluate the trained Machine Learning model and test the complete Fake News Detection Flask web application.
-
 The model was evaluated using accuracy, confusion matrix, precision, recall and F1-score. The Flask application was also tested with different Fake News and Real News articles.
 
-
-
 ## 🚀 What I Built This Week
-
 During Week 4, I:
 
 - Evaluated the trained Machine Learning model
@@ -422,16 +417,10 @@ During Week 4, I:
 - Added Clear History functionality
 - Tested the complete Flask web application
 
-
-
 ## 📊 Week 4 Model Evaluation
-
 ### Model Accuracy
-
 **99.52%**
 
 ### Confusion Matrix
-
- text
 [[4685   25]
- [  18 4252]]
+[  18 4252]]
